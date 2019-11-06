@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/04/02/13/abstract-3288642_960_720.jpg);
+}
+
+/* Styling general styling rules */
+
+nav, main, footer {
+    border: 1px solid salmon;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.75);
+}
+
+.overlay-darker {
+    background-color: rgba(0,0,0,0.85);
+}
+
+/* Styling nav */
+
+nav {
+    width: 15vw;
+    height: calc(100% - 70px);
+    position: fixed;
+    left: 0;
+}
+
+/* Styling main */
+
+main {
+    width: 85vw;
+}
+
+/* Styling footer */
+
+footer {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(102, 96, 71);
+}
