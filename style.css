@@ -184,6 +184,27 @@ main #main-bar .container-flex {
     font-size: 70%;
 }
 
+main h1 {
+    padding: 20px 0;
+}
+
+main .artist {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main figure {
+    border: 1px solid darksalmon;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 
 /* Styling footer */
 
@@ -220,7 +241,12 @@ footer {
 
     main {
         width: 70vw;
+        padding: 20px 10px;
+    }
+
+    main #main-bar {
         padding: 0 10px;
+        font-size: 150%;
     }
 
 }
@@ -245,6 +271,16 @@ footer {
 
     main {
         width: 85vw;
+    }
+
+    main figure img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    main figure p {
+        font-size: 75%;
     }
 
 }
