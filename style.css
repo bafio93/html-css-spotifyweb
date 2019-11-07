@@ -200,10 +200,39 @@ main figure img {
     margin-bottom: 10px;
 }
 
+/* Styling footer bars: courtesy of w3schools.com */
+
+.slider {
+  -webkit-appearance: none;
+  width: 400px;
+  height: 2px;
+  background: silver;
+  outline: none;
+  opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
 /* Styling footer */
 
-footer p {
-    border: 1px solid salmon;
+footer>div, footer>ul {
+    border: 1px solid goldenrod;
 }
 
 footer {
@@ -212,24 +241,48 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    background-color: rgba(102, 96, 71, 0.9);
+    background-color: rgba(102, 96, 71, 0.95);
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul.list-unstyled li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
 footer #footer-playing img {
     width: 50px;
+    margin-right: 10px;
 }
 
 footer #footer-playing p:last-child {
     line-height: 50px;
+    margin-left: 10px;
 }
 
-footer #footer-playing p:first-child {
-    display: block;
-    margin: 10px 20px;
+footer #footer-play-bar {
+    text-align: center;
+}
+
+footer #footer-play-bar li span.text-silver {
+    font-size: 50%;
+}
+
+footer #footer-volume-bar {
+    line-height: 50px;
+}
+
+footer #footer-volume-bar li:last-child {
+    margin: 0;
+}
+
+footer #footer-volume-bar input {
+    width: 80px;
+    transform: translateY(-5px);
 }
 
 /* All non-class media query here! */
-
 /* Desktop media query */
 
 @media screen and (max-width: 1024px) {
