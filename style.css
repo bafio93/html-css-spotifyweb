@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -13,10 +14,10 @@ body {
     background-image: url(https://cdn.pixabay.com/photo/2018/04/04/02/13/abstract-3288642_960_720.jpg);
 }
 
-/* Styling general styling rules */
+/* Styling general styling "display" rules */
 
-nav, main, footer {
-    border: 1px solid salmon;
+.container-flex {
+    display: flex;
 }
 
 .float-left {
@@ -33,12 +34,68 @@ nav, main, footer {
     clear: both;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+
+    .not-mobile {
+        display: none;
+    }
+
+}
+
+/* Styling general styling block rules */
+
 .overlay {
     background-color: rgba(0,0,0,0.75);
 }
 
 .overlay-darker {
     background-color: rgba(0,0,0,0.85);
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+/* Styling general text styling rules */
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bolder {
+    font-weight: bolder;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.text-silver {
+    color: silver;
+}
+
+.text-hover-silver:hover {
+    color: silver;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-hover-white:hover {
+    color: white;
+}
+
+.hover-border-green:hover {
+    border-left: 5px solid olive;
 }
 
 /* Styling nav */
@@ -48,7 +105,84 @@ nav {
     height: calc(100% - 70px);
     position: fixed;
     left: 0;
+    font-size: 80%;
+    padding: 10px 20px;
 }
+
+nav i:not(.fa-spotify) {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav li {
+    padding: 5px 0;
+}
+
+nav ul#nav-top i.fa-spotify {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+nav ul#nav-top li:nth-child(5) {
+    margin-top: 20px;
+}
+
+nav ul#nav-bottom {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 40px);
+}
+
+nav ul#nav-bottom li:last-child {
+    border-top: 1px solid silver;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    nav {
+        font-size: 70%;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        width: 30vw;
+        font-size: 80%;
+        padding: 10px 20px;
+    }
+
+    main {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        width: 15vw;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul#nav-bottom {
+        width: 100%;
+    }
+
+    nav ul#nav-bottom li:last-child {
+        border: none;
+    }
+
+    main {
+        width: 85vw;
+    }
+
+}
+
 
 /* Styling main */
 
@@ -63,5 +197,5 @@ footer {
     height: 70px;
     position: fixed;
     bottom: 0;
-    background-color: rgb(102, 96, 71);
+    background-color: rgba(102, 96, 71, 0.85);
 }
