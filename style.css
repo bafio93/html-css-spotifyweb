@@ -74,7 +74,25 @@ body {
 
 /* Styling general styling block rules */
 
+.play-hover {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 150px;
+    position: absolute;
+    visibility: hidden;
+    font-size: 40px;
+}
+
+figure>div:hover .play-hover {
+    visibility: visible;
+}
+
 .overlay {
+    background-color: rgba(0,0,0,0.75);
+}
+
+.overlay-hover:hover {
     background-color: rgba(0,0,0,0.75);
 }
 
