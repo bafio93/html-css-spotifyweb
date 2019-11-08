@@ -74,20 +74,6 @@ body {
 
 /* Styling general styling block rules */
 
-.play-hover {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    line-height: 150px;
-    position: absolute;
-    visibility: hidden;
-    font-size: 40px;
-}
-
-figure>div:hover .play-hover {
-    visibility: visible;
-}
-
 .overlay {
     background-color: rgba(0,0,0,0.75);
 }
@@ -187,6 +173,7 @@ nav ul#nav-bottom li:last-child {
 main {
     width: 85vw;
     padding: 0 10%;
+    margin-bottom: 85px;
 }
 
 main #main-bar .container-flex {
@@ -195,6 +182,20 @@ main #main-bar .container-flex {
     justify-content: space-around;
     align-items: center;
     font-size: 70%;
+}
+
+main .play-hover {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 150px;
+    position: absolute;
+    visibility: hidden;
+    font-size: 40px;
+}
+
+main figure>div:hover .play-hover {
+    visibility: visible;
 }
 
 main h1 {
